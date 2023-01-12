@@ -10,7 +10,7 @@
 <body>
   <!--  enctype="multipart/form-data" -->
   
-  <form action="valvedata_create.php" method="POST" enctype="multipart/form-data">
+  <form action="valvedata_create.php" method="POST">
      
     <fieldset>
       <legend>バルブデータの登録</legend>
@@ -37,9 +37,9 @@
       <div>
         口径: <input type="text" name="valve_size">
       </div>
-       <div>
+       <!-- <div>
         構造図: <input type="file" name="valve_structure" required>
-      </div>
+      </div> -->
       <div>
         <button>submit</button>
       </div>

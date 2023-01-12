@@ -1,9 +1,9 @@
 <?php
-echo "<pre>";
-var_dump($_POST);
-var_dump($_FILES);
-echo "</pre>";
-exit();
+// echo "<pre>";
+// var_dump($_POST);
+// var_dump($_FILES);
+// echo "</pre>";
+// exit();
 
 include('functions.php');
 
@@ -14,11 +14,11 @@ if (
   !isset($_POST['valve_name']) || $_POST['valve_name'] === ''||
   !isset($_POST['valve_jo']) || $_POST['valve_jo'] === '' ||
   !isset($_POST['valve_pat']) || $_POST['valve_pat'] === '' ||
-  !isset($_POST['valve_size']) || $_POST['valve_size'] === '' ||
-  !isset($_FILES["valve_structure"]["name"]) || $_FILES["valve_structure"]["name"] === '' ||
-  !isset($_FILES["valve_structure"]["type"]) || $_FILES["valve_structure"]["type"] === '' ||
-  !isset($_FILES["valve_structure"]["tmp_name"]) || $_FILES["valve_structure"]["tmp_name"] === '' ||   
-  !isset($_FILES["valve_structure"]["size"]) || $_FILES["valve_structure"]["size"] === '' 
+  !isset($_POST['valve_size']) || $_POST['valve_size'] === '' 
+  // !isset($_FILES["valve_structure"]["name"]) || $_FILES["valve_structure"]["name"] === '' ||
+  // !isset($_FILES["valve_structure"]["type"]) || $_FILES["valve_structure"]["type"] === '' ||
+  // !isset($_FILES["valve_structure"]["tmp_name"]) || $_FILES["valve_structure"]["tmp_name"] === '' ||   
+  // !isset($_FILES["valve_structure"]["size"]) || $_FILES["valve_structure"]["size"] === '' 
 ) {
   exit('paramError');
 }
